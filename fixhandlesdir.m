@@ -36,7 +36,7 @@ switch chooseplatform
         volumes = dir('/home');
         volumes(1:2) = [];
         volumes = {volumes.name};
-        
+
         for jx=1:length(volumes)
             volumes{jx} = fullfile('/media', volumes{jx});
         end
@@ -44,7 +44,7 @@ switch chooseplatform
         volumes = dir('/Volumes');
         volumes(1:2) = [];
         volumes = {volumes.name};
-        
+
         for jx=1:length(volumes)
             volumes{jx} = fullfile('/Volumes', volumes{jx});
 
